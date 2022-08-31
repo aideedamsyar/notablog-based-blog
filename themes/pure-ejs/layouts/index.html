@@ -10,8 +10,10 @@
     <meta name="description" content="<%= siteMeta.descriptionPlain %>">
     <meta property="og:description" content="<%= siteMeta.descriptionPlain %>">
   <% } %>
-  <% if (siteMeta.cover) { %>
+  <% if (siteMeta.iconUrl) { %>
     <meta property="og:image" content="<%= siteMeta.iconUrl %>">
+    <meta name="twitter:image" content="<%= siteMeta.cover %>">
+    <meta property="og:image" content="<%= siteMeta.cover %>" />
   <% } %>
 </head>
 
