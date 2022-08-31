@@ -9,8 +9,10 @@
 }
 
 :root {
-  --color-text-default: rgb(55, 53, 47);
-  --color-text-default-light: rgba(55, 53, 47, 0.6);
+  --color-text-default: rgb(242, 242, 247);
+  /*  rgb(55, 53, 47)*/
+  --color-text-default-light: rgba(142, 142, 147, 0.6);
+  /* rgba(55, 53, 47, 0.6); */
   --color-text-gray: rgb(155, 154, 151);
   --color-text-brown: rgb(100, 71, 58);
   --color-text-orange: rgb(217, 115, 13);
@@ -20,8 +22,10 @@
   --color-text-purple: rgb(105, 64, 165);
   --color-text-pink: rgb(173, 26, 114);
   --color-text-red: rgb(224, 62, 62);
-  --color-bg-default: rgb(255, 255, 255);
-  --color-bg-gray: rgb(235, 236, 237);
+  --color-bg-default: rgb(14, 14, 14);
+  /* rgb(255, 255, 255); */
+  --color-bg-gray: rgb(58, 58, 60);
+  /* rgb(235, 236, 237); */
   --color-bg-gray-light: rgba(235, 236, 237, 0.3);
   --color-bg-brown: rgb(233, 229, 227);
   --color-bg-brown-light: rgba(233, 229, 227, 0.3);
