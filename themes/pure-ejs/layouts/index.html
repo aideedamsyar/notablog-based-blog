@@ -32,7 +32,8 @@
         <span><img class="inline-img-icon" src="<%= siteMeta.iconUrl %>"></span>
       </div>
     <% } %>
-    <h1 class="Header__Title"><%= siteMeta.title %></h1>
+    <img src="https://64.media.tumblr.com/f195569709afa7e8bfd165a3aafbb84c/b8ca8f95e0ef2554-cd/s1280x1920/0f9d933aee8450d080febc7791794b045dd03ab6.jpg" style="width: 72%; display:block; margin:0 auto;"/>
+    <h1 class="Header__Title">Hi, my name is Aideed.</h1>
     <% if (siteMeta.description) { %>
       <div class="Header__Desc">
         <span class="Header__DescBigQuoteMark">&ldquo;</span>
@@ -40,11 +41,30 @@
         <span class="Header__DescBigQuoteMark">&bdquo;</span>
       </div>
     <% } %>
+
+    <p style="margin-top: 2rem;" class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="about.html"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">☁️&nbsp;About</span></a></span></span></p>
+    <p></p>
+    <p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="blog.html"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">🔭&nbsp;Blog</span></a></span></span></p>
+    <p></p>
+    <p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://aideedamsyar.com/blog"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">☄️&nbsp;Art Inspiration</span></a></span></span></p>
+    <p></p>
+    <p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://work.aideedamsyar.com"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">🪐&nbsp;Portfolio</span></a></span></span></p>
+    <p></p>
+    <p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://work.aideedamsyar.com/contact"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">🌊&nbsp;Contact</span></a></span></span></p>
+
+    <h1 style="margin-top: 2rem; margin-bottom: -1rem;">My latest writing</h1>
   </header>
+  
   <%- include('partials/articleList.html', {
-    pages: siteMeta.pages.filter(page => page.publish && page.inList) 
-  }) %>
+    pages: siteMeta.pages.filter(page => page.publish && page.inList).slice(0, 1)
+    }) %>
+
+    <img src="https://i.imgur.com/iS4NBzh.jpg" alt="fireworks" style="width: 72%; display:block; margin:0 auto;">
+    <img src="https://i.imgur.com/fTQdg9P.jpg" alt="building" style="width: 72%; display:block; margin:0 auto;">
+    <img src="https://i.imgur.com/4cgAHUq.jpg" alt="gwangalli bridge" style="width: 72%; display:block; margin:0 auto;">
+    <img src="https://i.imgur.com/7mXBnid.jpg" alt="store front" style="width: 72%; display:block; margin:0 auto;">
   <%- include('partials/footer.html', { siteMeta }) %>
+  
 </body>
 
 </html>
