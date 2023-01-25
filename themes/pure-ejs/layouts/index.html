@@ -4,7 +4,7 @@
 <head>
   <%- include('partials/head.html', { fontSize: 20, favicon: siteMeta.iconUrl }) %>
   <title><%= siteMeta.title %></title>
-  <meta property="og:type" content="blog">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="<%= siteMeta.title %>">
   <% if (siteMeta.description) { %>
     <meta name="description" content="<%= siteMeta.descriptionPlain %>">
@@ -32,7 +32,6 @@
         <span><img class="inline-img-icon" src="<%= siteMeta.iconUrl %>"></span>
       </div>
     <% } %>
-    <img src="https://64.media.tumblr.com/f195569709afa7e8bfd165a3aafbb84c/b8ca8f95e0ef2554-cd/s1280x1920/0f9d933aee8450d080febc7791794b045dd03ab6.jpg" style="width: 72%; display:block; margin:0 auto;"/>
     <h1 class="Header__Title">Hi, my name is Aideed.</h1>
     <% if (siteMeta.description) { %>
       <div class="Header__Desc">
