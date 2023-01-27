@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-    - master
+    - master #runs when there's a change?
 
 jobs:
   build:
