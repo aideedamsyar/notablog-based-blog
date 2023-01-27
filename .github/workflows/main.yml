@@ -1,6 +1,7 @@
 on:
-  schedule:
-    - now
+  push:
+    branches:
+    - master
 
 jobs:
   build:
