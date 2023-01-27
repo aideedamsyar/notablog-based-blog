@@ -1,7 +1,6 @@
 on:
-  push:
-    branches:
-    - master #runs when there's a change?
+  schedule:
+    - cron: '*/30 * * * *'
 
 jobs:
   build:
