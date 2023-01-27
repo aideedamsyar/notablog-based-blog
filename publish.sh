@@ -5,4 +5,4 @@ rm -rf docs
 cp -r public docs
 git add .
 git commit -m 'publish'
-git push origin master
+git push origin main
