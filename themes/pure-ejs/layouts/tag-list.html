@@ -38,27 +38,36 @@
     <h1 class="Header__Title"><%= siteMeta.title %></h1>
     <% if (siteMeta.description) { %>
       <div class="Header__Desc">
-        <span class="Header__DescBigQuoteMark">&ldquo;</span>
-        <%- siteMeta.descriptionHTML %>
-        <span class="Header__DescBigQuoteMark">&bdquo;</span>
+        <span class="Header__DescBigQuoteMark"></span>
+        Feel free to browse through the blog posts using these tags!
+        <span class="Header__DescBigQuoteMark"></span>
       </div>
     <% } %>
-  </header>
-  <%
-  var tags = [];
-  siteMeta.pages.filter(page => page.publish && page.inList).forEach(function(article) {
-    article.tags.forEach(function(tag) {
-      if (!tags.includes(tag)) {
-        tags.push(tag);
-      }
+
+        <!-- Import the article list -->
+    <% include('partials/articleList.html', {
+    pages: siteMeta.pages.filter(page => page.publish && page.inList)
+    }) %>
+    <!-- Display a list of all article tags -->
+    <%
+    // Create an empty array to store the tags
+    let tags = [];
+    // Loop through the article list and add each tag to the tags array
+    siteMeta.pages.forEach(function(article) {
+        article.tags.forEach(function(tag) {
+        if (!tags.includes(tag)) {
+            tags.push(tag);
+        }
+        });
     });
-  });
-%>
-<ul>
-  <% tags.forEach(function(tag) { %>
-    <li><a href="/tags/<%= tag %>"><%= tag %></a></li>
-  <% }); %>
-</ul>
+    %>
+        <ul class="dash-list">
+    <% tags.forEach(function(tag) { %>
+        <li style="text-decoration: underline;"><a href="/tags/<%= tag.value %>"><%= tag.value %></a></li>
+    <% }); %>
+    </ul>
+  </header>
+  
 
   <%- include('partials/footer.html', { siteMeta }) %>
 </body>

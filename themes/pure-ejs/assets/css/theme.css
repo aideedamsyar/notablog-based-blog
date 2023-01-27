@@ -1162,3 +1162,10 @@ pre.Code code {
   color: var(--color-text-default-light);
   font-size: 0.875em;
 }
+
+.dash-list li {
+  list-style-type: none;
+}
+.dash-list li::before {
+  content: "- ";
+}
