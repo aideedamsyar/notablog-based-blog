@@ -1,6 +1,6 @@
 on:
   schedule:
-    - now
+    - now #why?
 
 jobs:
   build:
