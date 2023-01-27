@@ -1,3 +1,4 @@
 {
-  "telemetry.enableCrashReporter": false
+  "telemetry.enableCrashReporter": false,
+  "liveServer.settings.port": 5501
 }
