@@ -1,3 +1,3 @@
 # notablog-based-blog
 
-Attempts
+Blog website sourced from Notion page.
