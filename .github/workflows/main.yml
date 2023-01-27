@@ -18,7 +18,7 @@ jobs:
     - name: Install notablog
       run: npm install -g notablog
     - name: Generate HTML
-      run: notablog generate .
+      run: /usr/local/bin/notablog generate .
     - name: Publish to GitHub Pages
       run: ./publish.sh "Automated publish" public
     - name: Update CNAME
