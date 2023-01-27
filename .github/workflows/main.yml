@@ -18,4 +18,7 @@ jobs:
     - name: Generate HTML
       run: notablog generate .
     - name: Publish to GitHub Pages
-      run: ./publish.sh "Automated publish"
+      run: ./publish.sh "Automated publish" public
+    - name: Update CNAME
+      run: echo "aideedamsyar.com" > public/CNAME
+
