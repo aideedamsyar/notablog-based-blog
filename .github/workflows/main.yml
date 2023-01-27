@@ -1,6 +1,6 @@
 on:
   schedule:
-    - now #why???
+    - now
 
 jobs:
   build:
@@ -15,6 +15,8 @@ jobs:
         node-version: 12
     - name: Install dependencies
       run: npm install
+    - name: Install notablog
+      run: npm install -g notablog
     - name: Generate HTML
       run: notablog generate .
     - name: Publish to GitHub Pages
