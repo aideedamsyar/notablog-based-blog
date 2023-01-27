@@ -45,7 +45,7 @@
     <% } %>
   </header>
   <%- include('partials/tagList.html', {
-    pages: siteMeta.pages.tags.filter(page => page.publish && page.tags) 
+    pages: siteMeta.pages.tags.filter(page => page.publish && page.inList) 
   }) %>
   <%- include('partials/footer.html', { siteMeta }) %>
 </body>
