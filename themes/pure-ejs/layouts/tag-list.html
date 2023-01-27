@@ -44,9 +44,22 @@
       </div>
     <% } %>
   </header>
-  <%- include('partials/tagList.html', {
-    pages: siteMeta.pages.tags.filter(page => page.publish && page.inList) 
-  }) %>
+  <%
+  var tags = [];
+  siteMeta.pages.filter(page => page.publish && page.inList).forEach(function(article) {
+    article.tags.forEach(function(tag) {
+      if (!tags.includes(tag)) {
+        tags.push(tag);
+      }
+    });
+  });
+%>
+<ul>
+  <% tags.forEach(function(tag) { %>
+    <li><a href="/tags/<%= tag %>"><%= tag %></a></li>
+  <% }); %>
+</ul>
+
   <%- include('partials/footer.html', { siteMeta }) %>
 </body>
 
