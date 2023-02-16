@@ -329,6 +329,7 @@ body {
   background: #3b474f;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .custom-btn:hover {

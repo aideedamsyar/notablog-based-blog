@@ -61,10 +61,10 @@
         });
     });
     %>
-        <ul class="dash-list">
+        <ul style="justify-content: center;" class="dash-list">
     <% tags.forEach(function(tag) { %>
         <div class="custom-btn">
-          <li style="text-decoration: underline; align-items: center;"><a href="/tag/<%= tag.value %>"><%= tag.value %></a></li>
+          <li style="text-decoration: underline;"><a href="/tag/<%= tag.value %>"><%= tag.value %></a></li>
         </div>
     <% }); %>
     </ul>
