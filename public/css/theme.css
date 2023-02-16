@@ -1169,3 +1169,12 @@ pre.Code code {
 .dash-list li::before {
   content: " ";
 } */
+
+ul {
+  margin-left: -40px; 
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
