@@ -227,7 +227,7 @@ body {
 /* Article */
 
 .Article {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .Article a {
@@ -258,6 +258,10 @@ body {
 
 .Article__Desc {
   padding-bottom: 0.5rem;
+}
+
+.Article__Desc p {
+  font-size: 10rem;
 }
 
 /* PageRoot (content body) */
