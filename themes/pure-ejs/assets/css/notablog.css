@@ -319,30 +319,4 @@ body {
   vertical-align: sub;
 }
 
-/* custom style buttons for tag page */
-.custom-btn {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  color: #ffffff;
-  font-size: 20px;
-  background: #3b474f;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.custom-btn:hover {
-  background: #5a6675;
-  text-decoration: none;
-}
-
-ul {
-  margin-left: -40px; 
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
 
