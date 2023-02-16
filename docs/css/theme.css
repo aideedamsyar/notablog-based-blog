@@ -1167,5 +1167,5 @@ pre.Code code {
   list-style-type: none;
 }
 .dash-list li::before {
-  content: "- ";
+  content: " ";
 }
