@@ -36,10 +36,11 @@
       </div>
     <% } %>
     <h1 class="Header__Title"><%= post.title %></h1>
+    <p>Written by Tengku Aideed Amsyar</p>
     <% if (post.date || post.tags.length) { %>
       <div class="DateTagBar">
         <% if (post.date) { %>
-          <p>Written by Tengku Aideed Amsyar</p>
+          
           <span class="DateTagBar__Item DateTagBar__Date">Posted on <%= post.dateString %></span>
         <% } %>
         <% post.tags.forEach(function(tag) { %>
