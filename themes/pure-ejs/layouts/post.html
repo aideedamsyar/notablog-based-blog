@@ -39,6 +39,7 @@
     <% if (post.date || post.tags.length) { %>
       <div class="DateTagBar">
         <% if (post.date) { %>
+          <p>Written by Tengku Aideed Amsyar</p>
           <span class="DateTagBar__Item DateTagBar__Date">Posted on <%= post.dateString %></span>
         <% } %>
         <% post.tags.forEach(function(tag) { %>
