@@ -36,7 +36,11 @@
       </div>
     <% } %>
     <h1 class="Header__Title"><%= post.title %></h1>
-    <p style="color: rgba(255, 255, 255, 0.7);">Written by <a style="text-decoration: underline;" href="https://work.aideedamsyar.com">Tengku Aideed Amsyar</a></p>
+    <div class="split">
+      <p style="color: rgba(255, 255, 255, 0.7);">Written by Tengku Aideed Amsyar </p>
+      <img src="themes/pure-ejs/assets/media/me.jpeg" alt="aideed">
+    </div>
+    
     <% if (post.date || post.tags.length) { %>
       <div class="DateTagBar">
         <% if (post.date) { %>
