@@ -15,6 +15,7 @@
     <meta name="twitter:image" content="<%= siteMeta.cover %>">
     <meta property="og:image" content="<%= siteMeta.cover %>" />
   <% } %>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
@@ -32,17 +33,18 @@
         <span><img class="inline-img-icon" src="<%= siteMeta.iconUrl %>"></span>
       </div>
     <% } %>
-    <h1 class="Header__Title">Hi, my name is Aideed.</h1>
 
     <p style="margin-top: 2rem;" class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="about.html"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">☁️&nbsp;About</span></a></span></span></p>
     <p></p>
     <p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="blog.html"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">🔭&nbsp;Blog</span></a></span></span></p>
     <p></p>
-    <p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://studio.aideedamsyar.com"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">☄️&nbsp;Art Inspiration</span></a></span></span></p>
-    <p></p>
     <p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://work.aideedamsyar.com"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">🪐&nbsp;Portfolio</span></a></span></span></p>
     <p></p>
+    <p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://studio.aideedamsyar.com"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">☄️&nbsp;Studio</span></a></span></span></p>
+    <p></p>
     <p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://work.aideedamsyar.com/contact"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">🌊&nbsp;Contact</span></a></span></span></p>
+
+    <h1 class="Header__Title">"It's Been A Pleasure Meeting You, Even If You Are My Least Favorite Vegetable."</h1>
 
     <h1 style="margin-top: 2rem; margin-bottom: -1rem;">My latest writing</h1>
   </header>
@@ -51,12 +53,37 @@
     pages: siteMeta.pages.filter(page => page.publish && page.inList).slice(0, 1)
     }) %>
 
-    <img src="https://i.imgur.com/iS4NBzh.jpg" alt="fireworks" style="width: 72%; display:block; margin:0 auto;">
+    <!-- <img src="https://i.imgur.com/iS4NBzh.jpg" alt="fireworks" style="width: 72%; display:block; margin:0 auto;">
     <img src="https://i.imgur.com/fTQdg9P.jpg" alt="building" style="width: 72%; display:block; margin:0 auto;">
     <img src="https://i.imgur.com/4cgAHUq.jpg" alt="gwangalli bridge" style="width: 72%; display:block; margin:0 auto;">
-    <img src="https://i.imgur.com/7mXBnid.jpg" alt="store front" style="width: 72%; display:block; margin:0 auto;">
+    <img src="https://i.imgur.com/7mXBnid.jpg" alt="store front" style="width: 72%; display:block; margin:0 auto;"> -->
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.imgur.com/iS4NBzh.jpg" class="d-block w-100" alt="fireworks">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.imgur.com/fTQdg9P.jpg" class="d-block w-100" alt="building">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.imgur.com/4cgAHUq.jpg" class="d-block w-100" alt="gwangalli bridge">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.imgur.com/7mXBnid.jpg" class="d-block w-100" alt="store front">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   <%- include('partials/footer.html', { siteMeta }) %>
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
