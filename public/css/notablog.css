@@ -79,6 +79,7 @@ body {
   max-width: 100%;
   margin: 0px auto;
   padding: 0px 96px;
+  margin-bottom: -4rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -88,6 +89,7 @@ body {
     max-width: 87.5%;
     padding-left: 0px;
     padding-right: 0px;
+    margin-bottom: -4rem;
   }
 }
 

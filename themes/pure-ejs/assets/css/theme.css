@@ -62,7 +62,8 @@
 body {
   color: var(--color-text-default);
   fill: currentColor;
-  font-family: 'Inter', sans-serif,'Spectral', serif;
+  font-family: 'Spectral', serif;
+  /* font-family: 'Inter', sans-serif,'Spectral', serif; */
   /* font-family: 'Source Sans Pro', -apple-system, 'BlinkMacSystemFont',
     'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
@@ -1222,4 +1223,8 @@ ul {
 .custom-btn:hover {
   background: #5a6675;
   text-decoration: none;
+}
+
+p {
+  font-size: 23px;
 }
