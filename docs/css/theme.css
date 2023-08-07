@@ -74,6 +74,10 @@ body {
   font-family: 'Inter', sans-serif,'Spectral', serif;
 }
 
+.Text_Custom p {
+  font-family: 'Inter', sans-serif,'Spectral', serif;
+}
+
 .Quote__Extra h6 {
   font-size: 4rem;
   font-weight: 400;
