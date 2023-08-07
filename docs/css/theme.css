@@ -71,16 +71,16 @@ body {
 }
 
 .Quote__Extra {
-  font-family: 'Inter', sans-serif,'Spectral', serif;
+  font-family: 'Spectral', serif;
 }
 
 .Text__Custom {
-  font-family: 'Inter', sans-serif,'Spectral', serif;
+  font-family: 'Spectral', serif;
   margin-top: 2rem;
 }
 
 .Text_Custom p {
-  font-family: 'Inter', sans-serif,'Spectral', serif;
+  font-family: 'Spectral', serif;
 }
 
 .Quote__Extra h1 {
@@ -90,7 +90,6 @@ body {
 }
 
 .Quote__Extra h1 {
-  font-family: 'Inter', sans-serif;
   font-family: 'Spectral', serif;
 }
 
