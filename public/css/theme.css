@@ -70,10 +70,16 @@ body {
   font-family: 'Inter', sans-serif,'Spectral', serif;
 }
 
-.Quote__Extra h1 {
+.Quote__Extra h3 {
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* .Quote__Extra h1 {
   font-family: 'Inter', sans-serif;
   font-family: 'Spectral', serif;
-}
+} */
 
 code {
   /* Use monospace before Courier so font looks better on Android Chrome. */
