@@ -66,6 +66,15 @@ body {
   margin: 0;
 }
 
+.Quote__Extra {
+  font-family: 'Inter', sans-serif,'Spectral', serif;
+}
+
+.Quote__Extra h1 {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Spectral', serif;
+}
+
 code {
   /* Use monospace before Courier so font looks better on Android Chrome. */
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace,
