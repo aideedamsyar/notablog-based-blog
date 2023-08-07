@@ -62,7 +62,7 @@
 body {
   color: var(--color-text-default);
   fill: currentColor;
-  font-family: 'Spectral', serif;
+  font-family: 'Spectral', serif, 'Inter', sans-serif;
   margin: 0;
 }
 
@@ -71,16 +71,16 @@ body {
 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
 
 .Quote__Extra {
-  font-family: 'Spectral', serif;
+  font-family: 'Spectral', serif, 'Inter', sans-serif;
 }
 
 .Text__Custom {
-  font-family: 'Spectral', serif;
+  font-family: 'Spectral', serif, 'Inter', sans-serif;
   margin-top: 2rem;
 }
 
 .Text_Custom p {
-  font-family: 'Spectral', serif;
+  font-family: 'Spectral', serif, 'Inter', sans-serif;
 }
 
 .Quote__Extra h1 {
@@ -90,7 +90,7 @@ body {
 }
 
 .Quote__Extra h1 {
-  font-family: 'Spectral', serif;
+  font-family: 'Spectral', serif, 'Inter', sans-serif;
 }
 
 code {
