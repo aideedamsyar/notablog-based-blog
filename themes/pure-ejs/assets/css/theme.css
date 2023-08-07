@@ -755,7 +755,7 @@ pre.Code code {
 .NumberedListWrapper {
   margin: 2px 0;
   padding-left: calc(1.5em + 4px);
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .NumberedList {
@@ -887,7 +887,7 @@ pre.Code code {
 /* SemanticStringArray */
 
 .SemanticString {
-  line-height: 1.2;
+  line-height: 1.4;
   white-space: pre-wrap;
   word-break: break-word;
 }
@@ -1071,7 +1071,7 @@ pre.Code code {
   display: flex;
   padding: 3px 0;
   margin: 2px 0;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .ToDo__Icon {
@@ -1226,5 +1226,5 @@ ul {
 
 p {
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.4;
 }
