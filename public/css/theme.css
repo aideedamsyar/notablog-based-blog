@@ -72,22 +72,23 @@ body {
 
 .Text__Custom {
   font-family: 'Inter', sans-serif,'Spectral', serif;
+  margin-top: 2rem;
 }
 
 .Text_Custom p {
   font-family: 'Inter', sans-serif,'Spectral', serif;
 }
 
-.Quote__Extra h6 {
+.Quote__Extra h1 {
   font-size: 4rem;
   font-weight: 400;
   font-style: normal;
 }
 
-/* .Quote__Extra h1 {
+.Quote__Extra h1 {
   font-family: 'Inter', sans-serif;
   font-family: 'Spectral', serif;
-} */
+}
 
 code {
   /* Use monospace before Courier so font looks better on Android Chrome. */
