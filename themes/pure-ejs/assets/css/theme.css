@@ -887,7 +887,7 @@ pre.Code code {
 /* SemanticStringArray */
 
 .SemanticString {
-  line-height: 1.5;
+  line-height: 1.2;
   white-space: pre-wrap;
   word-break: break-word;
 }
@@ -1225,5 +1225,6 @@ ul {
 }
 
 p {
-  font-size: 23px;
+  font-size: 20px;
+  line-height: 1.2;
 }
