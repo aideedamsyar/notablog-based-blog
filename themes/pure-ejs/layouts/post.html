@@ -10,10 +10,9 @@
     <meta name="description" content="<%= post.descriptionPlain %>">
     <meta property="og:description" content="<%= post.descriptionPlain %>">
   <% } %>
-  <% if (post.iconUrl) { %>
-    <meta property="og:image" content="<%= post.Header__Cover %>">
+  <% if (siteMeta.cover) { %>
+    <meta property="og:image" content="<%= siteMeta.cover %>">
   <% } %>
-
   
   <style>
     .DateTagBar {
