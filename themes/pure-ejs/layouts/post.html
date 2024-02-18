@@ -9,17 +9,14 @@
   <meta name="keywords" content="<%= post.descriptionPlain %>">
   <meta property="og:type" content="blog">
   <meta property="og:title" content="<%= post.title %>">
-  <meta property="og:url" content="<%= post.url %>">
+  <meta property="og:url" content="https://aideedamsyar.com/<%= post.url %>">
+  <link rel="canonical" href="https://aideedamsyar.com/<%= post.url %>">
   <meta property="og:site_name" content="deedsofaraway - A blog by Tengku Aideed Amsyar">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@deedsofaraway">
   <meta name="twitter:title" content="<%= post.title %>">
   <meta name="twitter:description" content="<%= post.descriptionPlain %>">
   <meta name="twitter:image" content="<%= post.cover %>">
-
-  <link rel="canonical" href="<%= post.url %>">
-
   <% if (post.description) { %>
     <meta name="description" content="<%= post.descriptionPlain %>">
     <meta property="og:description" content="<%= post.descriptionPlain %>">
@@ -41,11 +38,6 @@
       "datePublished": "<%= post.dateString %>"
     }
     </script>
-    
-
-
-
-  
   <style>
     .DateTagBar {
       margin-top: 1.0rem;
