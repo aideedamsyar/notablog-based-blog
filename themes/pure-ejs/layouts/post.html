@@ -11,9 +11,9 @@
     <meta property="og:description" content="<%= post.descriptionPlain %>">
   <% } %>
   <% if (post.iconUrl) { %>
-    <meta property="og:image" content="<%= post.iconUrl %>">
+    <meta property="og:image" content="<%= post.Header__Cover %>">
   <% } %>
-  <% if (options.siteMeta.cover) { %>
+  <% if (siteMeta.cover) { %>
     <meta property="og:image" content="<%= siteMeta.cover %>">
   <% } %>
   
