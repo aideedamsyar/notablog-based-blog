@@ -13,6 +13,10 @@
   <% if (post.iconUrl) { %>
     <meta property="og:image" content="<%= post.iconUrl %>">
   <% } %>
+  <% if (options.siteMeta.cover) { %>
+    <meta property="og:image" content="<%= siteMeta.cover %>">
+  <% } %>
+  
   <style>
     .DateTagBar {
       margin-top: 1.0rem;

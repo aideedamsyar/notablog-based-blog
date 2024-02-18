@@ -9,6 +9,9 @@
   <meta property="og:title" content="#<%= tagName %> | <%= siteMeta.title %>">
   <meta name="description" content="Posts with tag #<%= tagName %>">
   <meta property="og:description" content="Posts with tag #<%= tagName %>">
+  <% if (options.siteMeta.cover) { %>
+    <meta property="og:image" content="<%= siteMeta.cover %>">
+  <% } %>
 </head>
 
 <body>
