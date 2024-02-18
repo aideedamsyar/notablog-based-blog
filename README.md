@@ -8,7 +8,7 @@ My digital journal, [aideedamsyar.com](https://aideedamsyar.com), thrives on [No
 
 - **Intuitive Notion Integration**: With Notablog, the synergy between creating content in Notion and managing a blog is unparalleled, offering a seamless experience for those of us who are Notion nerds.
 - **Tailored Designs**: The platform provides a suite of adaptable templates, granting the freedom to mold the aesthetic and functional aspects of our sites to our liking. For me, I have always been into Notion's layout but unfortunately using Notion by itself for producing and putting it on the web is just not that ideal.
-- **Efficient Static Site Generation**: Through the generation of static pages, Notablog ensures our sites are not just secure but also exceptionally swift, offering readers an optimal browsing experience.
+- **Efficient Static Site Generation**: Swift static site generation with simplicity within itself.
 
 ### How It Works 🔧
 
