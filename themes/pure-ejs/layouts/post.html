@@ -4,8 +4,22 @@
 <head>
   <%- include('partials/head.html', { fontSize: 20, favicon: siteMeta.iconUrl }) %>
   <title><%= post.title %>&nbsp;|&nbsp;<%= siteMeta.title %></title>
+  
+  <meta name="author" content="Tengku Aideed Amsyar">
+  <meta name="keywords" content="<%= post.descriptionPlain %>">
   <meta property="og:type" content="blog">
   <meta property="og:title" content="<%= post.title %>">
+  <meta property="og:url" content="<%= post.url %>">
+  <meta property="og:site_name" content="deedsofaraway - A blog by Tengku Aideed Amsyar">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@deedsofaraway">
+  <meta name="twitter:title" content="<%= post.title %>">
+  <meta name="twitter:description" content="<%= post.descriptionPlain %>">
+  <meta name="twitter:image" content="<%= post.cover %>">
+
+  <link rel="canonical" href="<%= post.url %>">
+
   <% if (post.description) { %>
     <meta name="description" content="<%= post.descriptionPlain %>">
     <meta property="og:description" content="<%= post.descriptionPlain %>">
@@ -13,6 +27,24 @@
   <% if (siteMeta.cover) { %>
     <meta property="og:image" content="<%= post.cover %>">
   <% } %>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "<%= post.title %>",
+      "image": "<%= post.cover %>",
+      "author": {
+        "@type": "Person",
+        "name": "Tengku Aideed Amsyar"
+      },
+      "datePublished": "<%= post.dateString %>"
+    }
+    </script>
+    
+
+
+
   
   <style>
     .DateTagBar {
